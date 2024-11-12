@@ -8,11 +8,14 @@
       div.container {
         background-color: lightsalmon;
         display: flex;
-        flex-direction: column;
+
+        flex-flow: row wrap;
       }
       div.item {
         background-color: lightskyblue;
         border: 1px solid black;
+        border-style: dashed;
+        flex: auto;
         text-align: center;
         padding: 10px;
       }
@@ -21,13 +24,13 @@
   <body>
     <!-- container example-->
     <div class="container">
-      <div class="item">A</div>
-      <div class="item">B</div>
-      <div class="item">C</div>
-      <div class="item">D</div>
-      <div class="item">E</div>
-      <div class="item">F</div>
-      <div class="item">G</div>
+      <div class="item">Exemple of block A</div>
+      <div class="item">Exemple of block B</div>
+      <div class="item">Exemple of block C</div>
+      <div class="item">Exemple of block D</div>
+      <div class="item">Exemple of block E</div>
+      <div class="item">Exemple of block F</div>
+      <div class="item">Exemple of block G</div>
       <!-- container example -->
     </div>
   </body>
