@@ -4,16 +4,28 @@ body {
 
 #app {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 2fr 2fr;
+  /* grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr); */
+  grid-template-areas:
+    "header header header"
+    "main main aside"
+    "footer footer footer";
   height: 100vh;
   border: 2px solid green;
 }
 
-#app > div {
+#app > * {
   border: 1px solid red;
 }
 
-span {
-  border: 1px solid blue;
+#app header {
+  grid-area: header;
+}
+
+#app main {
+  grid-area: main;
+}
+
+#app footer {
+  grid-area: footer;
 }
