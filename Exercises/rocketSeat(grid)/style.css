@@ -1,31 +1,28 @@
 body {
   margin: 0;
+  box-sizing: border-box;
 }
 
-#app {
+.grid {
   display: grid;
-  /* grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr); */
-  grid-template-areas:
-    "header header header"
-    "main main aside"
-    "footer footer footer";
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 8px;
+  /* align-content: space-around;
+  justify-content: space-evenly; place-content junta os dois*/
+  /* justify-items: end;
+  align-items: end; place-itens junta os dois*/
   height: 100vh;
-  border: 2px solid green;
+  width: 100wh;
+  background-color: black;
 }
 
-#app > * {
-  border: 1px solid red;
+.grid > div {
+  background-color: cornflowerblue;
 }
 
-#app header {
-  grid-area: header;
-}
-
-#app main {
-  grid-area: main;
-}
-
-#app footer {
-  grid-area: footer;
+.grid > div:nth-child(2) {
+  /* alinha ele mesmo place-self: junta os dois */
+  align-self: center;
+  justify-self: center;
 }
