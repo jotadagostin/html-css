@@ -1,0 +1,10 @@
+body {
+  background-color: purple;
+  color: white;
+}
+
+@media (orientation: portrait) {
+  body {
+    background-color: orange;
+  }
+}
